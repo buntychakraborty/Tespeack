@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/speech_to_text"
+        android:layout_width="133dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/s2t" />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/text_to_speech"
+        android:layout_width="135dp"
+        android:layout_height="107dp"
+        android:layout_below="@id/speech_to_text"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/t2s" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="-319dp"
+        android:layout_toLeftOf="@+id/speech_to_text"
+        android:text="Speech To Text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speech_to_text"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginRight="-319dp"
+        android:layout_toLeftOf="@+id/text_to_speech"
+        android:text="Text to Speech"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
